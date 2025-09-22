@@ -1,64 +1,83 @@
 <!DOCTYPE html>
-<html lamg = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа</title>
-        <link rel="stylesheet" href="style/styles.css">
-    </head>
-    <body>
-    <div id="header">
-        <h1>🚀 Сайт, который точно сдадим в срок! (нет)</h1>
-        <p>Здесь могла быть ваша реклама, но мы студенты - у нас нет денег</p>
-    </div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pages/news.html">Новости</a></li>
-                <li><a href="https://github.com/Xoston/frontend-and-backend-practice">Практики</a></li> 
-                <li><a href="pages/goods.html">Товары</a></li>
-                <li><a href="pages/contacts.html">Контакты</a></li>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семестровая работа</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>🚀 Сайт, который точно сдадим в срок! (нет)</h1>
+            <p>Здесь могла быть ваша реклама, но мы студенты - у нас нет денег</p>
+        </header>
+        
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="pages/news.html" class="nav-link">Новости</a></li>
+                <li class="nav-item"><a href="https://github.com/Xoston/frontend-and-backend-practice" class="nav-link">Практики</a></li>
+                <li class="nav-item"><a href="pages/goods.html" class="nav-link">Товары</a></li>
+                <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
             </ul>
-        </div>
-        <div id="content">
-            <p>Информация об авторе</p>
-            <img src="images/photo.png" alt="Фото автора" width="200" height="250">
-            <p>Поскряков Александр Сергеевич</p>
-            <p>ЭФБО-15-24</p>
-            <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано ударила в голову. В четыре активно ругался.
-Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в раздевалке.</p>
-            <div>
-                Навык 1<br>
-                Умею дышать
-            </div>
-            <div>
-                Навык 2<br>
-                Умею пить
-            </div>
-            <div>
-                Навык 3<br>
-                Умею жить
-            </div>
-            <div>
-                Навык 4<br>
-                Умею читать
-            </div>
-            <div>
-                Мой опыт работы:
-                <div>
-                    Опыт 1<br>
-                    Работал фантазёром. Сочинял и праздновал.
+        </nav>
+        
+        <main class="content">
+            <section class="profile-header">
+                <h2 class="profile-title">Информация об авторе</h2>
+                <img src="images/photo.png" alt="Фото автора" class="profile-photo">
+                <h3 class="profile-name">Поскряков Александр Сергеевич</h3>
+                <p class="profile-group">ЭФБО-15-24</p>
+            </section>
+            
+            <section class="about-me">
+                <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано ударила в голову. В четыре активно ругался.
+                Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в раздевалке.</p>
+            </section>
+            
+            <section class="skills-section">
+                <h3 class="section-title">Мои навыки</h3>
+                <div class="skills-container">
+                    <div class="skill-tag">
+                        <strong>Навык 1</strong><br>
+                        Умею дышать
+                    </div>
+                    <div class="skill-tag">
+                        <strong>Навык 2</strong><br>
+                        Умею пить
+                    </div>
+                    <div class="skill-tag">
+                        <strong>Навык 3</strong><br>
+                        Умею жить
+                    </div>
+                    <div class="skill-tag">
+                        <strong>Навык 4</strong><br>
+                        Умею читать
+                    </div>
                 </div>
-                <div>
-                    Опыт 2<br>
-                    Работал воровством. Воровал и продавал.
+            </section>
+            
+            <section class="experience-section">
+                <h3 class="section-title">Мой опыт работы</h3>
+                <div class="experience-card">
+                    <h4 class="experience-title">Опыт 1</h4>
+                    <p class="experience-desc">Работал фантазёром. Сочинял и праздновал.</p>
                 </div>
-                <div>
-                    Опыт 3<br>
-                    Работал рэпером. Читал и пел.
+                <div class="experience-card">
+                    <h4 class="experience-title">Опыт 2</h4>
+                    <p class="experience-desc">Работал воровством. Воровал и продавал.</p>
                 </div>
-            </div>
-        </div>
-        <div id="footer">Тяжело</div>    
-    </body>
+                <div class="experience-card">
+                    <h4 class="experience-title">Опыт 3</h4>
+                    <p class="experience-desc">Работал рэпером. Читал и пел.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>Тяжело</p>
+        </footer>
+    </div>
+</body>
 </html>
