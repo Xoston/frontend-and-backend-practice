@@ -7,41 +7,51 @@
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div id="header">
-        <h1>🚀 Сайт, который точно сдадим в срок! (нет)</h1>
-        <p>Здесь могла быть ваша реклама, но мы студенты - у нас нет денег</p>
+    <div class="page-container">
+        <header class="header">
+            <h1>🚀 Сайт, который точно сдадим в срок! (нет)</h1>
+            <p>Здесь могла быть ваша реклама, но мы студенты - у нас нет денег</p>
+        </header>
+        
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                <li class="nav-item"><a href="https://github.com/Xoston/frontend-and-backend-practice" class="nav-link">Практики</a></li>
+                <li class="nav-item"><a href="goods.html" class="nav-link">Товары</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content">
+            <h2 class="section-title">Наши товары</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="../images/goods1.jpg" alt="Товар 1" class="product-image">
+                    <h3 class="product-title">Компьютер игровой</h3>
+                    <p class="product-price">500 000 руб.</p>
+                </div>
+                <div class="product-card">
+                    <img src="../images/goods2.jpg" alt="Товар 2" class="product-image">
+                    <h3 class="product-title">Туалет</h3>
+                    <p class="product-price">Неизмеримо много</p>
+                </div>
+                <div class="product-card">
+                    <img src="../images/goods3.jpg" alt="Товар 3" class="product-image">
+                    <h3 class="product-title">Наушники</h3>
+                    <p class="product-price">15 000 руб.</p>
+                </div>
+                <div class="product-card">
+                    <img src="../images/goods4.jpg" alt="Товар 4" class="product-image">
+                    <h3 class="product-title">Планшет</h3>
+                    <p class="product-price">200 000 руб.</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>Тяжело</p>
+        </footer>
     </div>
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="https://github.com/Xoston/frontend-and-backend-practice">Практики</a></li> 
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </div>
-    <div id="content">
-        <div class="product">
-            <img src="../images/goods1.jpg" alt="Товар 1" width="150" height="150">
-            <h3>Компьютер игровой</h3>
-            <p>Цена: 500 000 руб.</p>
-        </div>
-        <div class="product">
-            <img src="../images/goods2.jpg" alt="Товар 2" width="150" height="150">
-            <h3>Туалет</h3>
-            <p>Цена: Неизмеримо много.</p>
-        </div>
-        <div class="product">
-            <img src="../images/goods3.jpg" alt="Товар 3" width="150" height="150">
-            <h3>Наушники</h3>
-            <p>Цена: 15 000 руб.</p>
-        </div>
-        <div class="product">
-            <img src="../images/goods4.jpg" alt="Товар 4" width="150" height="150">
-            <h3>Планшет</h3>
-            <p>Цена: 200 000 руб.</p>
-        </div>
-    </div>
-    <div id="footer">Тяжело</div>
 </body>
 </html>
