@@ -4,4 +4,4 @@
 
 ## 🌐 Ссылка на сайт
 
-Сайт доступен по ссылке: [https://github.com/Xoston/frontend-and-backend-practice](https://github.com/Xoston/frontend-and-backend-practice)
+Сайт доступен по ссылке: [https://xoston.github.io/frontend-and-backend-practice/](https://xoston.github.io/frontend-and-backend-practice/)
