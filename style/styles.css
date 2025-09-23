@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8410cc 0%, #4e16b6 100%);
     min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body {
 
 /* ===== ШАПКА ===== */
 .header {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #000000 5%, #a300f4 50%, #000000 100%);
     color: white;
     text-align: center;
     padding: 30px;
@@ -40,7 +40,7 @@ body {
 
 /* ===== НАВИГАЦИЯ ===== */
 .nav {
-    background: #2c3e50;
+    background: #1e012d;
     padding: 20px 0;
 }
 
@@ -67,13 +67,13 @@ body {
 }
 
 .nav-link:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(102, 4, 145, 0.456);
     transform: translateY(-2px);
 }
 
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
 .content {
-    padding: 40px;
+    padding: 30px;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -92,12 +92,12 @@ body {
 }
 
 .profile-photo {
-    width: 220px;
-    height: 280px;
+    width: 280px;
+    height: 300px;
     border-radius: 15px;
     object-fit: cover;
     margin: 20px auto;
-    border: 4px solid #667eea;
+    border: 4px solid #5b0381;
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
 }
 
@@ -119,7 +119,7 @@ body {
     padding: 25px;
     border-radius: 15px;
     margin: 30px 0;
-    border-left: 5px solid #667eea;
+    border-left: 5px solid #6c09a9;
     font-size: 16px;
     line-height: 1.8;
 }
@@ -146,13 +146,13 @@ body {
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #410473 0%, #8300fe 100%);
     color: white;
-    padding: 15px 20px;
+    padding: 15px 15px;
     border-radius: 15px;
     font-weight: 600;
     font-size: 14px;
-    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+    box-shadow: 0 4px 15px rgba(113, 0, 233, 0.3);
     transition: all 0.3s ease;
     text-align: center;
     min-width: 120px;
@@ -167,7 +167,7 @@ body {
 
 .skill-tag:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+    box-shadow: 0 6px 20px rgba(160, 23, 251, 0.4);
 }
 
 /* ===== ОПЫТ РАБОТЫ ===== */
@@ -181,7 +181,7 @@ body {
     margin: 20px 0;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #8803f5;
     transition: transform 0.3s ease;
 }
 
@@ -191,7 +191,7 @@ body {
 
 .experience-title {
     font-size: 20px;
-    color: #2c3e50;
+    color: #5503a2;
     margin: 0 0 10px 0;
     font-weight: 600;
 }
@@ -204,22 +204,36 @@ body {
 
 /* ===== СТРАНИЦА КОНТАКТОВ ===== */
 .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     text-align: center;
     margin: 40px 0;
+    align-items: center;
 }
 
 .contact-item {
     font-size: 18px;
-    margin: 20px 0;
     color: #2c3e50;
     padding: 15px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 10px;
-    border-left: 4px solid #667eea;
+    border-radius: 40px;
+    border-left: 8px solid #440362;
+    width: 600px;
+    max-width: 900px;
+    transition: transform 1s ease, background 1s ease;
+    text-align: center;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+.contact-item:hover{
+    transform: translate(10px);
+    background: linear-gradient(135deg, #aa00ff 50%, #ffffff 100%);
 }
 
 .contact-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1f023a 0%, #764ba2 100%);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -229,11 +243,12 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 20px;
+    width: fit-content;
 }
 
 .contact-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 8px 25px rgba(123, 0, 255, 0.3);
 }
 
 /* ===== СТРАНИЦА ТОВАРОВ ===== */
@@ -257,7 +272,7 @@ body {
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    border-color: #667eea;
+    border-color: #6514a8;
 }
 
 .product-image {
@@ -277,7 +292,7 @@ body {
 
 .product-price {
     font-size: 22px;
-    color: #667eea;
+    color: #9000ff;
     font-weight: 700;
 }
 
@@ -288,7 +303,7 @@ body {
     margin: 25px 0;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border-left: 5px solid #667eea;
+    border-left: 5px solid #8000ff;
     transition: all 0.3s ease;
 }
 
@@ -313,7 +328,7 @@ body {
 
 .news-item p:first-of-type {
     font-style: italic;
-    color: #667eea;
+    color: #a000fc;
     font-weight: 500;
 }
 
@@ -331,8 +346,8 @@ body {
 
 /* ===== ФУТЕР ===== */
 .footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-    color: white;
+    background: linear-gradient(135deg, #000000 0%, #8c00ff 50%, #000000 100%);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 30px;
     margin-top: 50px;
